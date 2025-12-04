@@ -59,7 +59,7 @@ table {
     --soft-white: #FAF9F6;
 }
 
-/* GLOBAL STYLES (mobile first/small) */
+/* GLOBAL STYLES*/
 body {
     font-family: "Playfair Display";
     background-color: var(--linen);
@@ -153,7 +153,7 @@ h2 {
     margin-bottom: 6px;
 }
 
-/*this is my global style for mobile ?? - need help here, might be my html also a mess*/
+/*this is my global style for mobile gallery ?? - need help here please */
 .Gallery {
     margin-top: 20px;
     display: grid;
