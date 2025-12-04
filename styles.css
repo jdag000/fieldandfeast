@@ -66,142 +66,193 @@ body {
     color: var(--dark-charcoal);
 }
 
-.section{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 16px;
-}
-
-h1 {
-    color: var(--soft-white)
-}
-
-h2, h3 {
-    color: var(--midnight-blue);
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-left: 20px;
-}
-
-.top-header {
+header {
     background-color: var(--midnight-blue);
-    color: var(--soft-white);
     text-align: center;
+    padding: 24px 16px;
+    color: var(--soft-white);
 }
 
-
-.logo-area { 
+.logo {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.main-logo {
+
+.main-logo{
     width: 140px;
 }
 
-.top-header h1 {
-    font-size: 2.1rem;
-    font-weight: bold;
+header h1 {
+    margin-top: 10px;
+    font-size: 32px;
 }
 
-.tagline {
+header p {
     font-style: italic;
     font-size: 1rem;
-    padding-top: 14px;
+    padding-top: 6px;
 }
 
-.nav {
+nav ul {
+    margin-top: 20px;
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 100px;
     padding: 10px 16px;
-    flex-wrap: wrap;
+    flex: wrap;
 }
 
-.nav a { 
+nav a {
     text-decoration: none;
     color: var(--midnight-blue);
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
-#about h2 {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
 }
 
-#offerings h2 {
-    font-size: 1.4rem;
+h2 {
+    font-size: 1.6rem;
+    color: var(--midnight-blue);
     margin-bottom: 12px;
 }
 
-.artisan {
-    display: flex;
-    flex-direction: column;
+#offerings {
+    display: grid;
+    gap: 20px;
 }
 
-.exclusive-dining {
-    float: right;
-}
-
-.monthly-basket {
-    float: none;
-    clear: both;
-}
-
-
-.monthly-basket,
+/* OFFERINGS — mobile */
+.artisan,
 .exclusive-dining,
-.artisan {
+.monthly-basket {
     background-color: var(--olive-green);
     color: var(--soft-white);
-    border-radius: 8px;
     padding: 18px;
-    margin-bottom: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.monthly-basket,
+.artisan h3,
 .exclusive-dining h3,
-.artisan h3 {
+.monthly-basket h3 {
+    font-size: 1.1rem;
     margin-bottom: 6px;
-    font-size: 1rem;
 }
 
-.monthly-basket p,
-.monthly-basket li,
-.exclusive-dining p,
-.exclusive-dining li, 
-.artisan p,
-.artisan li {
-    font-size: 0.9rem;
-}
-
-#Gallery h2 { 
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-#Gallery p {
-    font-size: 1rem;
-}
-
+/* GALLERY — mobile */
 .Gallery {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
 }
 
 .gallery-card {
     background-color: var(--soft-white);
     border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 6px 14px;
+    padding: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.gallery-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.gallery-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--champagne-gold);
+    margin: 0 8px;
+}
+
+/* MEDIA QUERY (medium: 600px) */
+@media (min-width: 600px) {
+
+    .Gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+
+    /* Turn offerings into 2-column grid */
+    #offerings {
+        grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
+        gap: 24px;
+    }
+
+    /* Make the heading span across both columns */
+    #offerings > h2 {
+        grid-column: 1 / -1;
+    }
+
+    /* Monthly basket spans full width at the bottom */
+    .monthly-basket {
+        grid-column: 1 / -1;
+    }
+}
+
+    /* Gallery: 3 cards per row */
+    .Gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+/* MEDIA QUERY (xl: 1200px) */
+@media (min-width: 1200px) {
+
+    .section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Gallery 4 columns (like your XL mockup) */
+    .Gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .artisan,
+    .exclusive-dining,
+    .monthly-basket {
+        padding: 24px;
+    }
 }
