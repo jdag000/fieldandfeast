@@ -117,16 +117,16 @@ ul {
     padding-top: 14px;
 }
 
-.main-nav {
+.nav {
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 400px;
     padding: 10px 16px;
     flex-wrap: wrap;
 }
 
-.main-nav a { 
+.nav a { 
     text-decoration: none;
     color: var(--midnight-blue);
     font-weight: bold;
@@ -142,7 +142,24 @@ ul {
     margin-bottom: 12px;
 }
 
-.offer-box {
+.artisan {
+    display: flex;
+    flex-direction: column;
+}
+
+.exclusive-dining {
+    float: right;
+}
+
+.monthly-basket {
+    float: none;
+    clear: both;
+}
+
+
+.monthly-basket,
+.exclusive-dining,
+.artisan {
     background-color: var(--olive-green);
     color: var(--soft-white);
     border-radius: 8px;
@@ -150,13 +167,19 @@ ul {
     margin-bottom: 18px;
 }
 
-.offer-box h3 {
+.monthly-basket,
+.exclusive-dining h3,
+.artisan h3 {
     margin-bottom: 6px;
     font-size: 1rem;
 }
 
-.offer-box p,
-.offer-box li {
+.monthly-basket p,
+.monthly-basket li,
+.exclusive-dining p,
+.exclusive-dining li, 
+.artisan p,
+.artisan li {
     font-size: 0.9rem;
 }
 
