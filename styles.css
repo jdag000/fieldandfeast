@@ -64,13 +64,17 @@ body {
     font-family: "Playfair Display";
     background-color: var(--linen);
     color: var(--dark-charcoal);
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: var(--midnight-blue);
     text-align: center;
-    padding: 24px 16px;
+    padding: 24px 0;
     color: var(--soft-white);
+    padding-bottom: 0;
+    width: 100%;
 }
 
 .logo {
@@ -94,12 +98,16 @@ header p {
     padding-top: 6px;
 }
 
+nav {
+    width: 100%;
+}
+
 nav ul {
     margin-top: 20px;
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 120px;
     padding: 10px 16px;
     flex: wrap;
 }
@@ -169,7 +177,7 @@ h2 {
 
 .caption {
     margin-top: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: italic;
     text-align: center;
 }
@@ -201,10 +209,12 @@ footer {
 footer a {
     color: var(--champagne-gold);
     margin: 0 8px;
+    text-decoration: none;
+    text-wrap: flex;
 }
 
 /* MEDIA QUERY (medium: 600px) */
-@media (min-width: 600px) {
+@media (min-width: 600px){
 
     .Gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -214,25 +224,18 @@ footer a {
 /* MEDIA QUERY (large) */
 @media (min-width: 900px) {
 
-    /* Turn offerings into 2-column grid */
     #offerings {
-        grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
+        grid-template-columns: repeat(2, 1fr);  
         gap: 24px;
     }
-
-    /* Make the heading span across both columns */
     #offerings > h2 {
         grid-column: 1 / -1;
     }
-
-    /* Monthly basket spans full width at the bottom */
     .monthly-basket {
         grid-column: 1 / -1;
     }
 }
-
-    /* Gallery: 3 cards per row */
-    .Gallery {
+    .Gallery{
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -245,7 +248,6 @@ footer a {
         margin: 0 auto;
     }
 
-    /* Gallery 4 columns (like your XL mockup) */
     .Gallery {
         grid-template-columns: repeat(4, 1fr);
     }
