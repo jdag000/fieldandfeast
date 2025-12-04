@@ -202,15 +202,27 @@ footer {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 40px;
+    padding: 80px;
+    margin-top: 0px;
+    line-height: 20px;
 }
 
 footer a {
     color: var(--champagne-gold);
     margin: 0 8px;
     text-decoration: none;
-    text-wrap: flex;
+}
+
+footer ul {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer .email {
+    color: var(--champagne-gold);
+    font-weight: bold;
 }
 
 /* MEDIA QUERY (medium: 600px) */
