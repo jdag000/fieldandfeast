@@ -69,6 +69,8 @@ body {
     line-height: 20px;
 }
 
+
+
 header {
     background-color: var(--midnight-blue);
     text-align: center;
@@ -83,20 +85,25 @@ header {
     margin: 0 auto;
 }
 
-
 .main-logo{
-    width: 140px;
+    width: 160px;
 }
 
 header h1 {
     margin-top: 10px;
-    font-size: 32px;
+    margin-bottom: 18px;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 header p {
     font-style: italic;
-    font-size: 1rem;
-    padding-top: 6px;
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
 }
 
 nav {
@@ -108,7 +115,7 @@ nav ul {
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 100px;
     padding: 10px 16px;
     flex: wrap;
 }
@@ -116,8 +123,8 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--midnight-blue);
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: 900;
+    font-size: 18px;
 }
 
 .section {
@@ -127,16 +134,16 @@ nav a {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 24px;
     color: var(--midnight-blue);
     margin-bottom: 12px;
     justify-content: center;
+    font-weight: 400;
 }
 
 hr{
     width: 64%;
-    border: none;
-    border-top: 2px solid #E5C185;
+    border: 1px solid #E5C185;
     margin: 20px auto;
 }
 
@@ -151,15 +158,14 @@ hr{
     background-color: var(--olive-green);
     color: var(--soft-white);
     box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-    padding: 18px;
+    padding: 12px;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .artisan h3,
 .exclusive-dining h3,
 .monthly-basket h3 {
-    font-size: 1.1rem;
+    font-size: 24px;
     margin-bottom: 6px;
     font-weight: bold;
 }
@@ -169,6 +175,7 @@ hr{
     list-style-type: disc;
     margin-left: 20px;
     padding-left: 0;
+    font-size: 14px;
 }
 
 .Gallery {
@@ -182,7 +189,7 @@ hr{
     background-color: var(--soft-white);
     border-radius: 12px;
     padding: 12px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.363);
 }
 
 .gallery-card img {
@@ -193,7 +200,7 @@ hr{
 
 .caption {
     margin-top: 8px;
-    font-size: 1rem;
+    font-size: 14px;
     font-style: italic;
     text-align: center;
 }
