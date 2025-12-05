@@ -66,6 +66,7 @@ body {
     color: var(--dark-charcoal);
     margin: 0;
     padding: 0;
+    line-height: 20px;
 }
 
 header {
@@ -131,6 +132,12 @@ h2 {
     margin-bottom: 12px;
 }
 
+hr{
+    border: none;
+    border-top: 2px solid #E5C185;
+    margin: 20px 0;
+}
+
 #offerings {
     display: grid;
     gap: 20px;
@@ -151,7 +158,9 @@ h2 {
 .monthly-basket h3 {
     font-size: 1.1rem;
     margin-bottom: 6px;
+    font-weight: bold;
 }
+
 
 .monthly-basket ul {
     list-style-type: disc;
