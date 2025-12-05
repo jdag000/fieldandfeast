@@ -130,12 +130,14 @@ h2 {
     font-size: 1.6rem;
     color: var(--midnight-blue);
     margin-bottom: 12px;
+    justify-content: center;
 }
 
 hr{
+    width: 64%;
     border: none;
     border-top: 2px solid #E5C185;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 #offerings {
