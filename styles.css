@@ -150,6 +150,7 @@ hr{
 .monthly-basket {
     background-color: var(--olive-green);
     color: var(--soft-white);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
     padding: 18px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -170,7 +171,6 @@ hr{
     padding-left: 0;
 }
 
-/*this is my global style for mobile gallery ?? - need help here please */
 .Gallery {
     margin-top: 20px;
     display: grid;
@@ -264,12 +264,10 @@ footer .email {
     .monthly-basket {
         grid-column: 1 / -1;
     }
-}
     .Gallery{
         grid-template-columns: repeat(3, 1fr);
     }
-
-
+}
 /* MEDIA QUERY (XL 1200px) */
 @media (min-width: 1200px) {
 
