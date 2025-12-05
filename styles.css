@@ -117,7 +117,6 @@ nav ul {
     justify-content: center;
     gap: 100px;
     padding: 10px 16px;
-    flex: wrap;
 }
 
 nav a {
@@ -198,7 +197,7 @@ hr{
     border-radius: 8px;
 }
 
-.caption {
+h4 {
     margin-top: 8px;
     font-size: 14px;
     font-style: italic;
@@ -258,7 +257,7 @@ footer .email {
     }
 }
 
-/* MEDIA QUERY (large 900) */
+/* MEDIA QUERY (large 900px) */
 @media (min-width: 900px) {
 
     #offerings {
